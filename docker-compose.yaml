@@ -1,6 +1,6 @@
 version: "3.9"
 services:
   web:
-    build: .
+    build: .        #The web service uses an image that’s built from the Dockerfile in the current directory
     ports:
-      - "8000:3000"
+      - "8000:3000" #It then binds the container and the host machine to the exposed port 8000
